@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>லெட்சுமி Flour Mill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🌾 லெட்சுமி Flour Mill</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Fresh & Healthy Flour Products</h2>
+            <p>Best Quality Rice Flour, Wheat Flour, Ragi Flour and More.</p>
+            <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="products-container">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1603048719539-9ecb7c62c38d?q=80&w=1000" alt="Rice Flour">
+                <h3>Rice Flour</h3>
+                <p>1 KG Fresh Rice Flour</p>
+                <h4>₹60</h4>
+                <button onclick="addToCart('Rice Flour',60)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1000" alt="Wheat Flour">
+                <h3>Wheat Flour</h3>
+                <p>1 KG Pure Wheat Flour</p>
+                <h4>₹55</h4>
+                <button onclick="addToCart('Wheat Flour',55)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000" alt="Ragi Flour">
+                <h3>Ragi Flour</h3>
+                <p>Healthy Ragi Flour</p>
+                <h4>₹70</h4>
+                <button onclick="addToCart('Ragi Flour',70)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?q=80&w=1000" alt="Maida">
+                <h3>Maida</h3>
+                <p>Soft Baking Maida</p>
+                <h4>₹50</h4>
+                <button onclick="addToCart('Maida',50)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1000" alt="Besan Flour">
+                <h3>Besan Flour</h3>
+                <p>Pure Gram Flour</p>
+                <h4>₹80</h4>
+                <button onclick="addToCart('Besan Flour',80)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=1000" alt="Corn Flour">
+                <h3>Corn Flour</h3>
+                <p>Fine Quality Corn Flour</p>
+                <h4>₹75</h4>
+                <button onclick="addToCart('Corn Flour',75)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <h3>Total: ₹<span id="total-price">0</span></h3>
+
+        <button class="checkout-btn" onclick="checkout()">Buy Now</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>
+            லெட்சுமி Flour Mill provides fresh and healthy flour products for your family.
+            We prepare high quality flour using clean and modern machines.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Chennai, Tamil Nadu</p>
+        <p>📞 +91 9876543210</p>
+        <p>📧 lakshmiflourmill@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 லெட்சுமி Flour Mill | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
