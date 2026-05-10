@@ -228,3 +228,21 @@ footer {
         padding: 40px 20px;
     }
 }
+.search-box{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-box input{
+    width: 60%;
+    max-width: 500px;
+    padding: 15px;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.search-box input:focus{
+    box-shadow: 0 0 10px rgba(139,69,19,0.4);
+}
