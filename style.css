@@ -246,35 +246,3 @@ footer {
 .search-box input:focus{
     box-shadow: 0 0 10px rgba(139,69,19,0.4);
 }
-.auth-container{
-    width: 350px;
-    margin: 100px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-.auth-container h2{
-    margin-bottom: 20px;
-}
-
-.auth-container input{
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.auth-container button{
-    width: 100%;
-    padding: 12px;
-    background: #8b4513;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
