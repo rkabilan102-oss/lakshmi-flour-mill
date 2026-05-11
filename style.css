@@ -246,3 +246,11 @@ footer {
 .search-box input:focus{
     box-shadow: 0 0 10px rgba(139,69,19,0.4);
 }
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
